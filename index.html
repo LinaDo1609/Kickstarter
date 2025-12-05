@@ -313,8 +313,8 @@
           </div>
   
           <picture class="features__img grid--1-5-mob">
-            <source media="(max-width: 1279px)" type="image/webp" srcset="../src/images/img/speaker_3-tab.png" />
-            <source media="(max-width:639px)" srcset="../src/images/img/speaker_3-mob.png" type="image" />
+            <source media="(max-width: 1279px)" type="image/webp" srcset="./src/images/img/speaker_3-tab.png" />
+            <source media="(max-width:639px)" srcset="./src/images/img/speaker_3-mob.png" type="image" />
             <img src="./src/images/img/speaker_3.png" alt="speaker feature" class="features__img" />
           </picture>
         </div>
@@ -324,7 +324,11 @@
         <h2 class="questions__title grid--1-6 grid--1-5-tab">
           DO YOU HAVE ANY QUESTIONS?
         </h2>
-        <form action="/submit" method="POST" class="questions__form grid--7-13 grid--5-9-tab grid--1-5-mob">
+        <form 
+          action="#" 
+          method="post" 
+          onsubmit="event.preventDefault(); this.reset();"
+          class="questions__form grid--7-13 grid--5-9-tab grid--1-5-mob">
           <input type="email" placeholder="Your email" class="questions__email" />
           <textarea name="message" placeholder="Your message..." class="questions__text"></textarea>
           <button class="questions__submit" type="submit">
